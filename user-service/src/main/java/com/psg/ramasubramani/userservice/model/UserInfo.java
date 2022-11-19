@@ -1,8 +1,10 @@
 package com.psg.ramasubramani.userservice.model;
 
+import lombok.Data;
 import lombok.Getter;
 
 @Getter
+@Data
 public class UserInfo {
 	
 	private long id;

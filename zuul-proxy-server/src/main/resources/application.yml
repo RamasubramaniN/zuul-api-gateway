@@ -14,4 +14,11 @@ zuul:
     user-service:
       serviceId: user-service
   host:
-    socket-timeout-millis: 50000
+    socket-timeout-millis: 70000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
